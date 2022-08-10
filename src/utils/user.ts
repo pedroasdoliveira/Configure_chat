@@ -11,8 +11,12 @@ export const userJoin = (id: string, username: string) => {
   return true;
 };
 
+// ----------------------------------------------------------------------
+
 export const userLeave = (id: string) => {
   users = users.filter((user) => user.id !== id);
 };
+
+// ----------------------------------------------------------------------
 
 export const getUsers = () => users;
